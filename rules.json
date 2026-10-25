@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "region": "plaza",
+      "min_group_size": 2,
+      "warning_at": 3,
+      "critical_at": 5,
+      "enabled": true
+    }
+  ]
+}

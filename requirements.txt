@@ -1,0 +1,5 @@
+# Required for running the test suite (task 5: group threshold tests and sign-off)
+pytest>=8.0
+
+# Optional — real camera/video YOLO inference (task 1). Install with:
+#   pip install -r requirements-yolo.txt

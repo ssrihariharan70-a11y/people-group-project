@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "people-in-group-project"
+version = "0.1.0"
+description = "YOLO people detection with group-in-region logic, thresholds, events and crowd alerts"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+yolo = ["ultralytics>=8.0", "opencv-python>=4.8"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+people-group = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+include = ["people_group*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
